@@ -10,20 +10,34 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    327336,       7027]
-NotebookOptionsPosition[    326042,       6995]
-NotebookOutlinePosition[    326563,       7014]
-CellTagsIndexPosition[    326520,       7011]
+NotebookDataLength[    327295,       7039]
+NotebookOptionsPosition[    325866,       7004]
+NotebookOutlinePosition[    326389,       7023]
+CellTagsIndexPosition[    326346,       7020]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["Find possible choices for fast variables in coral model", "Title",
- CellChangeTimes->{{3.8396900205700083`*^9, 
-  3.839690054938335*^9}},ExpressionUUID->"de19c71c-ba25-40b6-8fef-\
+Cell["Coral model: find possible choices for fast variables ", "Title",
+ CellChangeTimes->{{3.8396900205700083`*^9, 3.839690054938335*^9}, {
+  3.839691394694304*^9, 3.839691400622851*^9}, {3.839691619305305*^9, 
+  3.8396916244627934`*^9}},ExpressionUUID->"de19c71c-ba25-40b6-8fef-\
 9c2663f87f1a"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Code for ",
+ StyleBox["Timescale separation in models of symbiosis: state space \
+reduction, multiple attractors and initialization",
+  FontSlant->"Italic"],
+ " (Pfab et al)\n"
+}], "Subsubsection",
+ CellChangeTimes->{{3.839691402354869*^9, 
+  3.839691414857012*^9}},ExpressionUUID->"6fa014f0-17cf-4ad8-a8a4-\
+de4409d9cc05"],
 
 Cell[CellGroupData[{
 
@@ -338,7 +352,7 @@ Cell[BoxData[
    3.836148565934764*^9}, {3.8361491848750153`*^9, 3.8361492072636642`*^9}, {
    3.836150263299737*^9, 3.836150272034585*^9}, {3.836572991411729*^9, 
    3.836572991915689*^9}, 3.8396903437745113`*^9},
- CellLabel->"In[1]:=",ExpressionUUID->"62b48ec8-8ea3-49e5-90b6-77a4e3c89b1a"],
+ CellLabel->"In[2]:=",ExpressionUUID->"62b48ec8-8ea3-49e5-90b6-77a4e3c89b1a"],
 
 Cell[BoxData[
  TagBox[
@@ -467,10 +481,11 @@ Cell[BoxData[
    3.835715109876581*^9, 3.83571526907479*^9, {3.836148560909062*^9, 
    3.8361485664892817`*^9}, 3.836149215075697*^9, 3.836150275826015*^9, 
    3.836236691354947*^9, 3.83657089339015*^9, 3.8365729928087673`*^9, 
-   3.839690140209968*^9, 3.839690344289044*^9, 3.8396903934475727`*^9},
+   3.839690140209968*^9, 3.839690344289044*^9, 3.8396903934475727`*^9, 
+   3.8396907381416388`*^9, 3.839691372286749*^9},
  CellLabel->
-  "Out[16]//TableForm=",ExpressionUUID->"371ecaed-eb78-4d3a-906e-\
-749afb113cc4"]
+  "Out[17]//TableForm=",ExpressionUUID->"dd2a1481-aa14-4eb1-9706-\
+1d546918d98f"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -642,7 +657,7 @@ Cell[BoxData[
   3.836570941143379*^9}, {3.836572386023864*^9, 3.836572661514566*^9}, {
   3.8365727128402147`*^9, 3.8365727391757393`*^9}, {3.839690291679689*^9, 
   3.8396903111545963`*^9}},
- CellLabel->"In[17]:=",ExpressionUUID->"af7d9720-9bab-4c43-a177-da6f35132207"],
+ CellLabel->"In[18]:=",ExpressionUUID->"af7d9720-9bab-4c43-a177-da6f35132207"],
 
 Cell[BoxData[
  GraphicsBox[
@@ -824,8 +839,9 @@ f75iqEeXR+cTci96eKDLo7sfnY8e3+jy6PEJAFTHJtQ=
    3.836570901158846*^9, 3.836570941830233*^9, {3.836572389263281*^9, 
    3.836572515545649*^9}, {3.836572546384364*^9, 3.8365726619999847`*^9}, {
    3.8365727155133133`*^9, 3.836572739493526*^9}, 3.839690140320827*^9, 
-   3.839690311628934*^9, 3.839690393622018*^9},
- CellLabel->"Out[21]=",ExpressionUUID->"61d54214-40eb-4086-aeba-9c0dd683747e"]
+   3.839690311628934*^9, 3.839690393622018*^9, 3.839690738281801*^9, 
+   3.839691372392796*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"f7e2e322-4f4e-4906-a3da-04ce85652658"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -971,7 +987,7 @@ Cell[BoxData[
    3.835713968934079*^9, 3.8357142856200027`*^9}, {3.8357145712925034`*^9, 
    3.835714572656735*^9}, 3.836570958569051*^9, {3.836572754353343*^9, 
    3.836572755431303*^9}},
- CellLabel->"In[22]:=",ExpressionUUID->"fc7ca88b-1462-4f25-ad19-4ce71f9fb776"],
+ CellLabel->"In[23]:=",ExpressionUUID->"fc7ca88b-1462-4f25-ad19-4ce71f9fb776"],
 
 Cell[CellGroupData[{
 
@@ -992,9 +1008,11 @@ Cell[BoxData[
      RowBox[{"Column", "[", 
       RowBox[{"Join", "[", 
        RowBox[{
-        RowBox[{
-        "{", "\"\<Supplementary Figure \
-1\\n\!\(\*StyleBox[\"Timescale\",FontSlant->\"Italic\"]\)\!\(\*StyleBox[\" \
+        RowBox[{"{", 
+         RowBox[{
+         "Framed", "[", 
+          "\"\<\!\(\*StyleBox[\"Timescale\",FontSlant->\"Italic\"]\)\!\(\*\
+StyleBox[\" \
 \",FontSlant->\"Italic\"]\)\!\(\*StyleBox[\"separation\",FontSlant->\"Italic\"\
 ]\)\!\(\*StyleBox[\" \
 \",FontSlant->\"Italic\"]\)\!\(\*StyleBox[\"in\",FontSlant->\"Italic\"]\)\!\(\
@@ -1018,10 +1036,11 @@ Cell[BoxData[
 \",FontSlant->\"Italic\"]\)\!\(\*StyleBox[\"and\",FontSlant->\"Italic\"]\)\!\(\
 \*StyleBox[\" \
 \",FontSlant->\"Italic\"]\)\!\(\*StyleBox[\"initialization\",FontSlant->\"\
-Italic\"]\) by Pfab et al.\\nCoral model. Cycle-free versions of graph for \
-the auxiliary variables. Yellow: auxiliary variables that when buffered \
-interrupt all cycles in the graph.\\nDoes not show redundant solutions (that \
-just add buffers to ready solutions with less buffers).\>\"", "}"}], ",", 
+Italic\"]\) (Pfab et al).\\nSupplementary Figure 1.\\nCoral model. Cycle-free \
+versions of graph for the auxiliary variables.\\nYellow: auxiliary variables \
+that when buffered interrupt all cycles in the graph.\\nDoes not show \
+redundant solutions (that just add buffers to ready solutions with less \
+buffers).\>\"", "]"}], "}"}], ",", 
         RowBox[{"Table", "[", "\[IndentingNewLine]", 
          RowBox[{
           RowBox[{"Column", "[", 
@@ -1061,15 +1080,17 @@ just add buffers to ready solutions with less buffers).\>\"", "}"}], ",",
    3.835715266526704*^9}, {3.8362366527038727`*^9, 3.8362367049086027`*^9}, 
    3.8365729709542027`*^9, {3.8396900981717587`*^9, 3.839690130562316*^9}, {
    3.839690170378923*^9, 3.839690285418429*^9}, {3.839690388008128*^9, 
-   3.839690435133033*^9}},
- CellLabel->"In[31]:=",ExpressionUUID->"7e3502c5-1b95-490c-9903-27b4304e2f30"],
+   3.839690435133033*^9}, {3.839690803683877*^9, 3.839690859834194*^9}, {
+   3.839690919530246*^9, 3.8396909709744062`*^9}, {3.839691004887143*^9, 
+   3.8396912699990377`*^9}, {3.839691353152453*^9, 3.83969136771445*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"7e3502c5-1b95-490c-9903-27b4304e2f30"],
 
 Cell[BoxData[
  StyleBox[
   TagBox[GridBox[{
-     {"\<\"Supplementary Figure \
-1\\n\\!\\(\\*StyleBox[\\\"Timescale\\\",FontSlant->\\\"Italic\\\"]\\)\\!\\(\\*\
-StyleBox[\\\" \
+     {
+      FrameBox["\<\"\\!\\(\\*StyleBox[\\\"Timescale\\\",FontSlant->\\\"Italic\
+\\\"]\\)\\!\\(\\*StyleBox[\\\" \
 \\\",FontSlant->\\\"Italic\\\"]\\)\\!\\(\\*StyleBox[\\\"separation\\\",\
 FontSlant->\\\"Italic\\\"]\\)\\!\\(\\*StyleBox[\\\" \
 \\\",FontSlant->\\\"Italic\\\"]\\)\\!\\(\\*StyleBox[\\\"in\\\",FontSlant->\\\"\
@@ -1092,11 +1113,12 @@ FontSlant->\\\"Italic\\\"]\\)\\!\\(\\*StyleBox[\\\" \
 \\\",FontSlant->\\\"Italic\\\"]\\)\\!\\(\\*StyleBox[\\\"and\\\",FontSlant->\\\
 \"Italic\\\"]\\)\\!\\(\\*StyleBox[\\\" \
 \\\",FontSlant->\\\"Italic\\\"]\\)\\!\\(\\*StyleBox[\\\"initialization\\\",\
-FontSlant->\\\"Italic\\\"]\\) by Pfab et al.\\nCoral model. Cycle-free \
-versions of graph for the auxiliary variables. Yellow: auxiliary variables \
-that when buffered interrupt all cycles in the graph.\\nDoes not show \
-redundant solutions (that just add buffers to ready solutions with less \
-buffers).\"\>"},
+FontSlant->\\\"Italic\\\"]\\) (Pfab et al).\\nSupplementary Figure 1.\\nCoral \
+model. Cycle-free versions of graph for the auxiliary variables.\\nYellow: \
+auxiliary variables that when buffered interrupt all cycles in the \
+graph.\\nDoes not show redundant solutions (that just add buffers to ready \
+solutions with less buffers).\"\>",
+       StripOnInput->False]},
      {
       TagBox[GridBox[{
          {"\<\"--------------\"\>"},
@@ -6971,30 +6993,17 @@ SubscriptBox[\\(CO\\), \\(2\\)]]\\)\"\>",
    "Column"],
   StripOnInput->False,
   FontFamily->"Times"]], "Output",
- CellChangeTimes->{{3.8210357665499687`*^9, 3.821035806215905*^9}, {
-   3.821035850928473*^9, 3.8210358719487677`*^9}, 3.82103593531229*^9, {
-   3.821035965641987*^9, 3.821036002214794*^9}, {3.821036648330187*^9, 
-   3.821036673462837*^9}, 3.821038012826542*^9, {3.8210380902924023`*^9, 
-   3.821038108218261*^9}, 3.821038166836801*^9, {3.821038267562276*^9, 
-   3.8210382990638027`*^9}, 3.821038384956155*^9, 3.821038492869671*^9, {
-   3.821038846017982*^9, 3.821038873929193*^9}, 3.821038967758527*^9, 
-   3.821046486741241*^9, 3.821047035893157*^9, 3.821047153864393*^9, {
-   3.82104718411684*^9, 3.8210471912226562`*^9}, 3.821047259382666*^9, {
-   3.826917206988943*^9, 3.826917226477948*^9}, {3.8357131746269083`*^9, 
-   3.835713181105422*^9}, 3.835713832063086*^9, 3.835713895573112*^9, 
-   3.835714363040286*^9, {3.835714450840789*^9, 3.835714462551558*^9}, 
-   3.835714526932845*^9, {3.835714613718192*^9, 3.8357146569219522`*^9}, 
-   3.835715123348527*^9, 3.835715279752625*^9, {3.836236697837655*^9, 
-   3.8362367061953917`*^9}, 3.836570964949398*^9, 3.8365727577847652`*^9, 
-   3.8365729731478777`*^9, {3.839690136011257*^9, 3.839690145932417*^9}, {
-   3.839690214529827*^9, 3.8396902388319607`*^9}, 3.839690277895694*^9, 
-   3.839690319711669*^9, {3.839690401155034*^9, 3.839690436655892*^9}},
- CellLabel->"Out[31]=",ExpressionUUID->"0c9374f3-7b94-4cdd-8d80-8d09bd957da9"]
+ CellChangeTimes->{{3.8396909518002663`*^9, 3.83969097225063*^9}, {
+  3.839691009997119*^9, 3.83969103091434*^9}, {3.8396910633240747`*^9, 
+  3.8396910664440813`*^9}, {3.839691098340582*^9, 3.839691271096368*^9}, {
+  3.83969136947684*^9, 3.839691378324977*^9}},
+ CellLabel->"Out[29]=",ExpressionUUID->"9284f4a1-94ce-4a46-be4a-20b42bf31915"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1440., 851.25},
-WindowMargins->{{0, Automatic}, {Automatic, 21.75}},
+WindowSize->{960., 560.25},
+WindowMargins->{{Automatic, 136.5}, {Automatic, 88.5}},
 TaggingRules->{
  "WelcomeScreenSettings" -> {"FEStarting" -> False}, "TryRealOnly" -> False},
 Magnification:>0.9 Inherited,
@@ -7014,19 +7023,22 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 200, 3, 89, "Title",ExpressionUUID->"de19c71c-ba25-40b6-8fef-9c2663f87f1a"],
+Cell[580, 22, 296, 4, 89, "Title",ExpressionUUID->"de19c71c-ba25-40b6-8fef-9c2663f87f1a"],
 Cell[CellGroupData[{
-Cell[805, 29, 11731, 311, 787, "Input",ExpressionUUID->"62b48ec8-8ea3-49e5-90b6-77a4e3c89b1a"],
-Cell[12539, 342, 5554, 130, 238, "Output",ExpressionUUID->"371ecaed-eb78-4d3a-906e-749afb113cc4"]
+Cell[901, 30, 341, 9, 62, "Subsubsection",ExpressionUUID->"6fa014f0-17cf-4ad8-a8a4-de4409d9cc05"],
+Cell[CellGroupData[{
+Cell[1267, 43, 11731, 311, 807, "Input",ExpressionUUID->"62b48ec8-8ea3-49e5-90b6-77a4e3c89b1a"],
+Cell[13001, 356, 5604, 131, 238, "Output",ExpressionUUID->"dd2a1481-aa14-4eb1-9706-1d546918d98f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18130, 477, 6565, 167, 229, "Input",ExpressionUUID->"af7d9720-9bab-4c43-a177-da6f35132207"],
-Cell[24698, 646, 9416, 181, 322, "Output",ExpressionUUID->"61d54214-40eb-4086-aeba-9c0dd683747e"]
+Cell[18642, 492, 6565, 167, 229, "Input",ExpressionUUID->"af7d9720-9bab-4c43-a177-da6f35132207"],
+Cell[25210, 661, 9464, 182, 322, "Output",ExpressionUUID->"f7e2e322-4f4e-4906-a3da-04ce85652658"]
 }, Open  ]],
-Cell[34129, 830, 6545, 143, 280, "Input",ExpressionUUID->"fc7ca88b-1462-4f25-ad19-4ce71f9fb776"],
+Cell[34689, 846, 6545, 143, 280, "Input",ExpressionUUID->"fc7ca88b-1462-4f25-ad19-4ce71f9fb776"],
 Cell[CellGroupData[{
-Cell[40699, 977, 4551, 87, 245, "Input",ExpressionUUID->"7e3502c5-1b95-490c-9903-27b4304e2f30"],
-Cell[45253, 1066, 280761, 5925, 7952, "Output",ExpressionUUID->"0c9374f3-7b94-4cdd-8d80-8d09bd957da9"]
+Cell[41259, 993, 4802, 92, 264, "Input",ExpressionUUID->"7e3502c5-1b95-490c-9903-27b4304e2f30"],
+Cell[46064, 1087, 279762, 5912, 7955, "Output",ExpressionUUID->"9284f4a1-94ce-4a46-be4a-20b42bf31915"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }

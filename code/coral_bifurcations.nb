@@ -10,22 +10,33 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    287488,       5240]
-NotebookOptionsPosition[    286590,       5216]
-NotebookOutlinePosition[    287081,       5234]
-CellTagsIndexPosition[    287038,       5231]
+NotebookDataLength[    287826,       5254]
+NotebookOptionsPosition[    286887,       5228]
+NotebookOutlinePosition[    287380,       5246]
+CellTagsIndexPosition[    287337,       5243]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["Coral-algae model from Cunning et al 2017", "Title",ExpressionUUID->"2c5e77e2-e042-4f34-ad90-e163e9d43bee"],
+Cell["Coral model: bifurcations", "Title",
+ CellChangeTimes->{{3.839691536238921*^9, 
+  3.8396915439228077`*^9}},ExpressionUUID->"2c5e77e2-e042-4f34-ad90-\
+e163e9d43bee"],
 
-Cell["Bifurcations", "Subtitle",
- CellChangeTimes->{{3.832347398291482*^9, 
-  3.832347399620946*^9}},ExpressionUUID->"d7b50316-3145-4176-b5f0-\
-89ac9e97c817"],
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Code for ",
+ StyleBox["Timescale separation in models of symbiosis: state space \
+reduction, multiple attractors and initialization",
+  FontSlant->"Italic"],
+ " (Pfab et al)"
+}], "Subsubsection",
+ CellChangeTimes->{{3.839691402354869*^9, 3.839691414857012*^9}, 
+   3.8396914840891438`*^9},ExpressionUUID->"40fe3e0e-0c3f-4fcd-8469-\
+b6fe8a301b58"],
 
 Cell[BoxData[
  RowBox[{
@@ -5213,9 +5224,10 @@ FontSlant->\\\"Italic\\\"]\\)\"", TraditionalForm], None},
  CellLabel->"Out[59]=",ExpressionUUID->"73701aaa-f857-41f6-8e50-72ff67f7708d"]
 }, Open  ]]
 }, Open  ]]
+}, Open  ]]
 },
-WindowSize->{1440., 851.25},
-WindowMargins->{{0, Automatic}, {Automatic, 21.75}},
+WindowSize->{960., 560.25},
+WindowMargins->{{224.25, Automatic}, {-90, Automatic}},
 TaggingRules->{
  "WelcomeScreenSettings" -> {"FEStarting" -> False}, "TryRealOnly" -> False},
 FrontEndVersion->"12.1 for Linux x86 (64-bit) (June 19, 2020)",
@@ -5234,12 +5246,14 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 113, 0, 98, "Title",ExpressionUUID->"2c5e77e2-e042-4f34-ad90-e163e9d43bee"],
-Cell[696, 24, 158, 3, 53, "Subtitle",ExpressionUUID->"d7b50316-3145-4176-b5f0-89ac9e97c817"],
-Cell[857, 29, 19780, 507, 1697, "Input",ExpressionUUID->"5e8419b3-9333-46e9-93d2-cde97433e56b"],
+Cell[580, 22, 170, 3, 98, "Title",ExpressionUUID->"2c5e77e2-e042-4f34-ad90-e163e9d43bee"],
 Cell[CellGroupData[{
-Cell[20662, 540, 5479, 133, 216, "Input",ExpressionUUID->"a405117b-4167-4062-b7bf-0f07d7e3cf90"],
-Cell[26144, 675, 260418, 4537, 603, "Output",ExpressionUUID->"73701aaa-f857-41f6-8e50-72ff67f7708d"]
+Cell[775, 29, 364, 9, 71, "Subsubsection",ExpressionUUID->"40fe3e0e-0c3f-4fcd-8469-b6fe8a301b58"],
+Cell[1142, 40, 19780, 507, 1827, "Input",ExpressionUUID->"5e8419b3-9333-46e9-93d2-cde97433e56b"],
+Cell[CellGroupData[{
+Cell[20947, 551, 5479, 133, 216, "Input",ExpressionUUID->"a405117b-4167-4062-b7bf-0f07d7e3cf90"],
+Cell[26429, 686, 260418, 4537, 580, "Output",ExpressionUUID->"73701aaa-f857-41f6-8e50-72ff67f7708d"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }

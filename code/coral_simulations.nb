@@ -10,19 +10,33 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    751927,      12905]
-NotebookOptionsPosition[    750157,      12867]
-NotebookOutlinePosition[    750678,      12886]
-CellTagsIndexPosition[    750635,      12883]
+NotebookDataLength[    752288,      12922]
+NotebookOptionsPosition[    750480,      12882]
+NotebookOutlinePosition[    751000,      12901]
+CellTagsIndexPosition[    750957,      12898]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["Coral-algae model from Cunning et al 2017", "Title",ExpressionUUID->"43d62a25-4090-4cc2-abe1-e9bc8ee5b8b5"],
+Cell["Coral model: simulations", "Title",
+ CellChangeTimes->{{3.839691578107182*^9, 
+  3.839691584395227*^9}},ExpressionUUID->"43d62a25-4090-4cc2-abe1-\
+e9bc8ee5b8b5"],
 
-Cell["Numerics: ODE method, with 2 fluxes as state variables", "Subtitle",ExpressionUUID->"43a3632e-9d33-4e3f-b556-15a40a5e4936"],
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Code for ",
+ StyleBox["Timescale separation in models of symbiosis: state space \
+reduction, multiple attractors and initialization",
+  FontSlant->"Italic"],
+ " (Pfab et al)"
+}], "Subsubsection",
+ CellChangeTimes->{{3.839691402354869*^9, 3.839691414857012*^9}, 
+   3.8396914840891438`*^9},ExpressionUUID->"c045879f-9089-4f5c-920c-\
+6e4cfb2ff53a"],
 
 Cell[CellGroupData[{
 
@@ -12864,9 +12878,10 @@ u96S/V/qb/LFkv/n/wcdwgN8\
 96.],ExpressionUUID->"9e7bf251-879c-42b3-85e5-15dc0c4000c0"]
 }, Open  ]]
 }, Open  ]]
+}, Open  ]]
 },
 WindowSize->{1440., 761.25},
-WindowMargins->{{0, Automatic}, {Automatic, 21.75}},
+WindowMargins->{{0, Automatic}, {Automatic, 43.5}},
 TaggingRules->{
  "WelcomeScreenSettings" -> {"FEStarting" -> False}, "TryRealOnly" -> False},
 Magnification:>1.2 Inherited,
@@ -12886,25 +12901,27 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 113, 0, 117, "Title",ExpressionUUID->"43d62a25-4090-4cc2-abe1-e9bc8ee5b8b5"],
-Cell[696, 24, 129, 0, 64, "Subtitle",ExpressionUUID->"43a3632e-9d33-4e3f-b556-15a40a5e4936"],
+Cell[580, 22, 167, 3, 117, "Title",ExpressionUUID->"43d62a25-4090-4cc2-abe1-e9bc8ee5b8b5"],
 Cell[CellGroupData[{
-Cell[850, 28, 24299, 610, 1890, "Input",ExpressionUUID->"96ed0c66-41fc-493a-bf7b-508414b81d94"],
-Cell[25152, 640, 82551, 1482, 349, "Output",ExpressionUUID->"075c99a0-c578-465d-95a6-2db06ded4b58"]
+Cell[772, 29, 364, 9, 54, "Subsubsection",ExpressionUUID->"c045879f-9089-4f5c-920c-6e4cfb2ff53a"],
+Cell[CellGroupData[{
+Cell[1161, 42, 24299, 610, 1890, "Input",ExpressionUUID->"96ed0c66-41fc-493a-bf7b-508414b81d94"],
+Cell[25463, 654, 82551, 1482, 349, "Output",ExpressionUUID->"075c99a0-c578-465d-95a6-2db06ded4b58"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[107740, 2127, 4105, 86, 134, "Input",ExpressionUUID->"1312ac18-4999-4c3b-b4e0-05fa39114d1a"],
-Cell[111848, 2215, 8231, 175, 84, "Output",ExpressionUUID->"274f14fa-e0f8-4c75-83ca-1c65b2b7c763"]
+Cell[108051, 2141, 4105, 86, 158, "Input",ExpressionUUID->"1312ac18-4999-4c3b-b4e0-05fa39114d1a"],
+Cell[112159, 2229, 8231, 175, 84, "Output",ExpressionUUID->"274f14fa-e0f8-4c75-83ca-1c65b2b7c763"]
 }, Open  ]],
-Cell[120094, 2393, 3574, 90, 304, "Input",ExpressionUUID->"79ccb588-12d4-4130-80a3-f8dd8e9e3d6e"],
-Cell[123671, 2485, 2950, 78, 231, "Input",ExpressionUUID->"026098b6-2ad5-4e86-ac07-196e28e49e42"],
+Cell[120405, 2407, 3574, 90, 304, "Input",ExpressionUUID->"79ccb588-12d4-4130-80a3-f8dd8e9e3d6e"],
+Cell[123982, 2499, 2950, 78, 231, "Input",ExpressionUUID->"026098b6-2ad5-4e86-ac07-196e28e49e42"],
 Cell[CellGroupData[{
-Cell[126646, 2567, 3051, 71, 157, "Input",ExpressionUUID->"37c4f6a0-8380-4b73-a18c-d2ea7278deb7"],
-Cell[129700, 2640, 1075, 15, 39, "Output",ExpressionUUID->"9f5c7660-5cad-4f6a-bfad-5b45c8e2986a"]
+Cell[126957, 2581, 3051, 71, 157, "Input",ExpressionUUID->"37c4f6a0-8380-4b73-a18c-d2ea7278deb7"],
+Cell[130011, 2654, 1075, 15, 39, "Output",ExpressionUUID->"9f5c7660-5cad-4f6a-bfad-5b45c8e2986a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[130812, 2660, 2781, 73, 206, "Input",ExpressionUUID->"fd59f2a7-c246-4bbe-831e-4424eb4e7abe"],
-Cell[133596, 2735, 616533, 10128, 444, 275647, 4542, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"9e7bf251-879c-42b3-85e5-15dc0c4000c0"]
+Cell[131123, 2674, 2781, 73, 206, "Input",ExpressionUUID->"fd59f2a7-c246-4bbe-831e-4424eb4e7abe"],
+Cell[133907, 2749, 616533, 10128, 444, 275647, 4542, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"9e7bf251-879c-42b3-85e5-15dc0c4000c0"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }
